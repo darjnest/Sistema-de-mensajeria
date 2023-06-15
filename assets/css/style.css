@@ -1,0 +1,115 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    grid-area: header;
+    background-color: #25527b;
+    text-align: center;
+}
+
+.header h1 {
+    color: white;
+    font-weight: normal;
+    font-size: 120%;
+    padding: 1% 0;
+}
+
+.main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    background-color: #e7e7e7;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.card h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.card h2 {
+    margin: 0px;
+    text-align: center;
+    font-weight: lighter;
+    font-size: 140%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.buy-buttom {
+    background-color: #25527b;
+}
+
+.buy-buttom:hover {
+    background-color: #3a7dbb;
+}
+
+.buy-buttom p {
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    background-color: #e7e7e7;
+    padding-left: 10%;
+}
+
+.sidebar h1 {
+    font-size: 3vh;
+}
+
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    list-style: none;
+    font-size: 120%;
+}
+
+.sidebar li small {
+    color: #b3b1af;
+}
+
+.sidebar small:hover {
+    color: #595958;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+.footer h1 {
+    color: #bababb;
+    font-weight: normal;
+    font-size: 120%;
+    padding: 1% 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'sidebar main main'
+    'footer footer footer';
+    grid-template-columns: auto auto auto;
+}
